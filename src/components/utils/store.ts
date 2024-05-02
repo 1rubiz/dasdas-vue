@@ -14,7 +14,7 @@ export const dataStore = defineStore('user', {
     loading: false
   }),
   actions: {
-    async getBlogData(id: string) {
+    async getBlogData(id: any) {
       try {
         this.loading = true;
         const response = await axios.get('https://techcrunch.com/wp-json/wp/v2/posts/' + id + '?per_page=1');
