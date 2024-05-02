@@ -11,7 +11,7 @@
 <template>
     <div>
         <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-7 mb-[10vh] mt-[4vh]">
-            <section v-for="item in grid" :key="item.id" class="relative rounded-[5px] h-auto p-1 card">
+            <section v-for="item in data" :key="item.id" class="relative rounded-[5px] h-auto p-1 card">
                 <div class="w-[100%] flex justify-center items-center">
                     <img :src="item.yoast_head_json.og_image[0].url" :height="item.yoast_head_json.og_image[0].height" :width="item.yoast_head_json.og_image[0].width"/>
                 </div>

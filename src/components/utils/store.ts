@@ -4,11 +4,12 @@ import axios from 'axios';
 
 interface DataStoreState {
   blog: any;
-  data: any;
+  moreBlog: any;
   loading: boolean;
 }
 
 export const dataStore = defineStore('user', {
+  id: 'myStore',
   state: (): DataStoreState => ({
     blog: {},
     moreBlog: [],
