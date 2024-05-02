@@ -14,7 +14,6 @@
 
   // get blog via store method
   await data.getBlogData(id);
-  const format = dataStore.dateFormat;
   // get blog state from store
   const blog = data.blog
   // get 'more blog' state from store
