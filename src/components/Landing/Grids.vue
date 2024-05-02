@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-    import {dateFormat} from '../dateFormat';
+    import { dateFormat } from '../utils/dateUtils';
     // initialize the props
     const props = defineProps(['gridData'])
     // get props from parent component

@@ -1,7 +1,7 @@
 <script lang='ts' setup>
     import Grids from './Grids.vue'
     import axios from 'axios'
-    import {dateFormat} from '../dateFormat';
+    import { dateFormat } from '../utils/dateUtils';
 
     // fetch data 
     const data = await axios.get('https://techcrunch.com/wp-json/wp/v2/posts?per_page=10&per_page=30')  

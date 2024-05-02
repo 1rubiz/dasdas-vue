@@ -1,9 +1,10 @@
 <script setup lang="ts">
   import { useRoute } from 'vue-router'
   import { dataStore } from '../utils/store.js';
-  import {dateFormat} from '../dateFormat'
+  // import {dateFormat} from '../dateFormat'
   import Grids from '../Landing/Grids.vue';
-  
+  import { dateFormat } from '../utils/dateUtils';
+
   // get id embedded in the route
   const route = useRoute();
   const id = route.params.id;
@@ -13,7 +14,7 @@
 
   // get blog via store method
   await data.getBlogData(id);
-
+  const format = dataStore.dateFormat;
   // get blog state from store
   const blog = data.blog
   // get 'more blog' state from store

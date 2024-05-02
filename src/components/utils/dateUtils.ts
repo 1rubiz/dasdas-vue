@@ -1,7 +1,7 @@
-export const dateFormat = (dateString)=> {
+export const dateFormat = (dateString: string): string => {
     const currentDate = new Date();
     const providedDate = new Date(dateString);
-    const timeDifference = currentDate - providedDate;
+    const timeDifference = currentDate.getTime() - providedDate.getTime();
     const secondsDifference = Math.floor(timeDifference / 1000);
     const minutesDifference = Math.floor(secondsDifference / 60);
     const hoursDifference = Math.floor(minutesDifference / 60);
@@ -25,4 +25,5 @@ export const dateFormat = (dateString)=> {
     } else {
         return 'just now';
     }
-  }
+  };
+  
