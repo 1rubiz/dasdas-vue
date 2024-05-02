@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import { createRouter, createWebHistory} from 'vue-router'
 import Landing from '../Landing/Landing.vue';
 import Article from '../Articles/Article.vue';

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   import { quantum } from 'ldrs'
   import { dataStore } from './utils/store.js';
 

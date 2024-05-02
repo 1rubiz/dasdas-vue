@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { useRoute } from 'vue-router'
-  import axios from 'axios'
   import { dataStore } from '../utils/store.js';
   import dateFormat from '../dateFormat'
   import Grids from '../Landing/Grids.vue';

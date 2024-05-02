@@ -4,9 +4,9 @@
     import dateFormat from '../dateFormat';
 
     // fetch data 
-    const data: [] = await axios.get('https://techcrunch.com/wp-json/wp/v2/posts?per_page=10&per_page=30')  
-    const articles: []  = await data.data;
-    const landing: {} = articles[0];
+    const data = await axios.get('https://techcrunch.com/wp-json/wp/v2/posts?per_page=10&per_page=30')  
+    const articles  = await data.data;
+    const landing = articles[0];
 </script>
 
 <template>
