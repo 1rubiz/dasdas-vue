@@ -1,9 +1,3 @@
-<script lang="ts">
-// import Vue from 'vue'
-// export default Vue.extend({
-    
-// })
-</script>
 <template>
     <div class="flex justify-between items-center mb-12 pt-2">
         <a href='/'><img src='/logo.svg' class="w-[120px] h-[120px]"/></a>
@@ -15,3 +9,7 @@
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+
+</script>

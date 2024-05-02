@@ -1,4 +1,4 @@
-export default function formatDate(dateString: string) {
+export const dateFormat = (dateString)=> {
     const currentDate = new Date();
     const providedDate = new Date(dateString);
     const timeDifference = currentDate - providedDate;

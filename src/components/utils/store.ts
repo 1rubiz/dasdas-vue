@@ -2,8 +2,14 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
+interface DataStoreState {
+  blog: any;
+  data: any;
+  loading: boolean;
+}
+
 export const dataStore = defineStore('user', {
-  state: () => ({
+  state: (): DataStoreState => ({
     blog: {},
     moreBlog: [],
     loading: false

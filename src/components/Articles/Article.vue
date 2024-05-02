@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { useRoute } from 'vue-router'
   import { dataStore } from '../utils/store.js';
-  import dateFormat from '../dateFormat'
+  import {dateFormat} from '../dateFormat'
   import Grids from '../Landing/Grids.vue';
   
   // get id embedded in the route
